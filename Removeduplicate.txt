@@ -1,0 +1,16 @@
+class Solution {
+    String removeDups(String s) {
+        Map<Character,Integer> res =new HashMap<>();
+       String a="";
+        for(int i=0;i<s.length();i++)
+        {
+            if(!res.containsKey(s.charAt(i)))
+            {
+                res.put(s.charAt(i),1);
+                a=a+s.charAt(i);
+            }
+        }
+        return a;
+        
+    }
+}
