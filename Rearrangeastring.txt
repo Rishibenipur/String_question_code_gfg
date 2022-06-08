@@ -1,0 +1,31 @@
+//User function Template for Java
+
+class Solution
+{
+    public String arrangeString(String s)
+        {
+           String alp="";
+           int sum=0;
+           int flag=1;
+           
+           for(int i=0;i<s.length();i++)
+           {
+               char ch=s.charAt(i);
+               if(ch=='1'||ch=='2'||ch=='3'||ch=='4'||ch=='5'||ch=='6'||ch=='7'||ch=='8'||ch=='9'||ch=='0')
+                 {
+                     sum=sum+(ch-'0');
+                     flag=0;
+                 }
+                 else
+                 alp+=ch;
+           }
+            char a[]=alp.toCharArray();
+            Arrays.sort(a);
+            String fin=new String(a);
+            if(flag==1)
+            return fin;
+            String S=Integer.toString(sum) ;
+            return fin+S;
+           
+        }
+}

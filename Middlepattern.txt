@@ -1,0 +1,17 @@
+class GfG
+{
+/*method prints the given pattern in a single line */
+	void printPattern(String s)
+	{
+	  String res="";
+   int mid=s.length()/2;
+  
+   for(int i=mid;i<(mid+s.length());i++)
+   {
+     int temp=i%(s.length());
+       res=res+s.charAt(temp);
+       System.out.print(res+"$"+" ");
+   }
+    }
+}
+

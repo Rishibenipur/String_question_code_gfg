@@ -1,0 +1,6 @@
+class Solution {
+    static String replaceAll(String str, String oldW, String newW) {
+        String rep=str.replaceAll(oldW,newW);
+        return rep;
+    }
+}

@@ -1,0 +1,17 @@
+class Solution{
+    static String sequence(String s){
+        String res="";
+        if(s.length()<=2)
+        return s;
+        res=res+s.charAt(0)+s.charAt(1);
+        
+      for(int i=2;i<s.length();i++)
+      {
+          char ch=s.charAt(i);
+          if(s.charAt(i-1)!=ch||s.charAt(i-2)!=ch)
+          res+=ch;
+      }
+      return res;
+      
+    }
+}
